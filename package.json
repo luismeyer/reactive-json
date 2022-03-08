@@ -1,0 +1,18 @@
+{
+  "name": "reactive-json",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^17.0.21"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "example": "node example/cli.js"
+  }
+}
