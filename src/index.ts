@@ -8,7 +8,7 @@ const readJson = <T>(filepath: string): T => {
 export const reactiveJSON = <T extends Record<any, any>>(
   filepath: string,
   init?: T
-): T | {} => {
+): Partial<T> => {
   if (!existsSync(filepath)) {
     writeFileSync(filepath, JSON.stringify(init ?? {}));
   }
